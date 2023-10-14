@@ -1,0 +1,139 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Here, we want to work with a clean slate that is why we 
+    set border and padding to 0 while box-sizing: border-box basically removes
+    all the default padding and border in the html elements */
+}
+
+:root {
+    --main-color: #6400e4;
+    --hover-shadow: 0px 3px 5px 0 rgba(0,0,0,0.34);
+    --box-hover: 0px 4px 4px 0px rgba(3,3,3,0.561);
+    --nav-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    --light-black: #141c3a;
+    /* In here, we create CSS variables */
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    /* You can import the "Nunito" font by searching Google Fonts in Chrome,
+    then searching for the font name in the search bar. Select variations of Nunito and then
+    copy generated link at the bottom-right corner of the screen. */
+}
+
+.container {
+    width: 28%;
+    margin: 100px auto;
+    /* Here we want to limit our working space and then center the div using the margin: auto attribute*/
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    /* Since forms behaves essentially as divs, we can apply display: flex to work with elements much easier. */
+}
+
+form label {
+    margin: 5px 0;
+    /* These are the names of the forms. */
+}
+
+form input[type="text"], input[type="password"] {
+    height: 55px;
+    margin: 5px 0;
+    border: 0.5px solid #b8b85d;
+    border-radius: 3px;
+    padding: 0 15px;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    /* You can target multiple classes, ids, or inputs at the same time by using a comma. We do this
+    when these things are set to have the same attribute. */
+}
+
+form a {
+    margin: 10px 0;
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+form input[type="submit"] {
+    height: 50px;
+    background: var(--main-color);
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    box-shadow: var(--hover-shadow);
+    transform: translateY(-2px); /* Translates Y upwards when hover*/
+    /* Hover adds animation to our code. Hover is cool! */
+}
+
+.footer h3 {
+    font-size: 16px;
+    opacity: 0.9;
+    /* We can change the default charactertics of html elements like this h3 element */
+}
+
+.footer .images {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+    /* The images div and its behavior */
+}
+
+.footer .images img {
+    width: 15%;
+    border: 1px solid #e7e7e7;
+    padding: 15px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+    /* The behavior of the actual images in the div */
+}
+
+.footer .images img:hover {
+    box-shadow: var(--hover-shadow);
+    cursor: pointer;
+    /* More hover, yey! */
+}
+
+.footer p {
+    float: right;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.footer a {
+    color: var(--main-color);
+    text-decoration: none;
+    float: right;
+    font-size: 16px;
+    opacity: 0.9;
+    font-weight: bold;
+    /* We use float attribute here to not just center all our elements and create dynamics.  */
+}
+
+.footer a:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    /* Hover!!!! */
+}
+
+
+
+
+
+
+
+
